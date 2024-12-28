@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home_style.css">
+    <script src="script-home.js" defer></script>
+<script src="room.js" defer></script>
+    <title>Shara Jey's Bed & Breakfast</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Shara Jey's B&B</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+               
+                
+                <li><a href="booking-history.html">Booking History</a></li>
+               <li><a href="admin.html">Stakeholders Page</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+<li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Image Carousel -->
+   <section class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-item"><img src="images/room1.jpg" alt="Luxurious Room"></div>
+        <div class="carousel-item"><img src="images/room2.jpg" alt="Comfortable Suite"></div>
+        <div class="carousel-item"><img src="images/dining.jpg" alt="Fine Dining"></div>
+    </div>
+    <div class="carousel-buttons">
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+    </div>
+</section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h1>Welcome to Shara Jey's Bed & Breakfast</h1>
+        <p>Experience luxury, comfort, and personalized service at our one-of-a-kind Bed & Breakfast. Your perfect getaway awaits!</p>
+    </section>
+
+   <section id="book-room">
+    <h2>Book a Room</h2>
+    <form id="booking-form">
+        <label for="room">Select Availlable Room:</label>
+        <select id="room" required>
+            <option value="">--Select Room--</option>
+        </select>
+
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn" required>
+
+        <label for="checkOut">Check-out Date:</label>
+        <input type="date" id="checkOut" required>
+
+        <button type="submit">Reserve Room</button>
+    </form>
+
+    <div id="booking-message"></div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <p>© 2024 Shara Jey's Bed & Breakfast. All rights reserved.</p>
+            <p>Contact us at: <a href="mailto:contact@sharajeybnb.com">contact@sharajeybnb.com</a></p>
+            <p>Follow us: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

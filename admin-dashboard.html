@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #007bb5;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #d9534f; /* Red for error messages */
+        }
+
+        #message.success {
+            color: #5cb85c; /* Green for success messages */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Room</h2>
+        <form id="add-room-form">
+            <label for="roomNumber">Room Number:</label>
+            <input type="text" id="roomNumber" required>
+
+            <label for="roomType">Room Type:</label>
+            <input type="text" id="roomType" required>
+
+            <label for="pricePerNight">Price per Night ($):</label>
+            <input type="number" id="pricePerNight" required>
+
+            <button type="submit">Add Room</button>
+        </form>
+        <a href="index.html" class="back-btn">Back to Homepage</a>
+        <div id="message"></div>
+    </div>
+
+    <script src="add-room.js"></script>
+</body>
+</html>
