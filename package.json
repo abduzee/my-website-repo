@@ -2,8 +2,9 @@
   "name": "bed-and-breakfast-app",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
+"start": "node app.js",  // <-- Change this line to "node app.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
